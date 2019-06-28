@@ -1,0 +1,83 @@
+{
+  "Scaffold": {
+    "appBar": {
+      "AppBar": {
+        "backgroundColor": 0xCC000000,
+        "title": {
+          "Text": {"data": "This is page 5 Container"}
+        }
+      }
+    },
+    "body": {
+      "Center": {
+        "child": {
+          "Column": {
+            "mainAxisAlignment": "MainAxisAlignment.start",
+            "children": [
+              {
+                "Container": {
+                  "color": 0xFFFF0000,
+                  "child": {
+                    "Text": {"data": "This is inside a container with no sizes"}
+                  }
+                }
+              },
+              {
+                "Container": {
+                  "color": 0xFFFF0000,
+                  "width": 20,
+                  "height": 20,
+                  "child": {
+                    "Text": {"data": "This is inside a container with width and height"}
+                  }
+                }
+              },
+              {
+                "Container": {
+                  "color": 0xFFFF0000,
+                  "margin": {
+                    "EdgeInsets": {
+                      "all": 50
+                    }
+                  },
+                  "child": {
+                    "Text": {"data": "This is inside a container with margin"}
+                  }
+                }
+              },
+               {
+                "Container": {
+                  "color": 0xFFFF0000,
+                  "padding": {
+                    "EdgeInsets": {
+                      "all": 50
+                    }
+                  },
+                  "child": {
+                    "Text": {"data": "This is inside a container with padding"}
+                  }
+                }
+              },
+            ]
+          }
+        }
+      }
+    },
+    "floatingActionButton": {
+      "FloatingActionButton": {
+        "tooltip": "this is a tooltip",
+        "onPressed": {
+          "actions": [
+            {
+              "type": "navigate",
+              "data": {"destination": "sixthPage", "setAsRoot": false}
+            },
+          ]
+        },
+        "child": {
+          "Icon": {"codePoint": 0xe146}
+        }
+      }
+    }
+  }
+}
